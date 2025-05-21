@@ -1,0 +1,33 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/Workspace/pem-web-lanjut-apps/node_modules
+/Workspace/pem-web-lanjut-apps/.env
+/Workspace/pem-web-lanjut-apps/yarn.lock
+/Workspace/pem-web-lanjut-apps/package-lock.json
+
+/Workspace/middleware-chat-apps/node_modules
+/Workspace/middleware-chat-apps/.env
+/Workspace/middleware-chat-apps/yarn.lock
+/Workspace/middleware-chat-apps/package-lock.json
+
+
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
