@@ -1,0 +1,33 @@
+services:
+  js-root:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: js-root:latest
+    container_name: js-root
+    restart: unless-stopped
+    init: true
+    ports:
+      - "3000:3000"  # React app served by 'serve' on port 3000
+    networks:
+      - appnet
+    # No env_file needed for root service
+
+  js-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: js-server:latest
+    container_name: js-server
+    restart: unless-stopped
+    init: true
+    ports:
+      - "3001:3001"  # Node.js backend on port 3001
+    networks:
+      - appnet
+    env_file:
+      - ./server/.env
+
+networks:
+  appnet:
+    driver: bridge
