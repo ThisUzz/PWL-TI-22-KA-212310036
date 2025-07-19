@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search or start a new chat" />
+      </div>
+      <div class="chat-list">
+        <div class="chat-item">
+          <div class="avatar" style="background-color:#f28b82;">R</div>
+          <div class="chat-info">
+            <div class="name">Riska</div>
+            <div class="message">Oke besok aku kabarin ya.</div>
+          </div>
+        </div>
+        <div class="chat-item">
+          <div class="avatar" style="background-color:#81c995;">D</div>
+          <div class="chat-info">
+            <div class="name">Dinda</div>
+            <div class="message">Kok bisa sih ???</div>
+          </div>
+        </div>
+        <div class="chat-item">
+          <div class="avatar" style="background-color:#444;">I</div>
+          <div class="chat-info">
+            <div class="name">Indah</div>
+            <div class="message">Belum ngerjain lagi gua, besok paling ...</div>
+          </div>
+        </div>
+        <div class="chat-item">
+          <div class="avatar" style="background-color:#f44336;">K</div>
+          <div class="chat-info">
+            <div class="name">Kevin</div>
+            <div class="message">Padahal sedikit lagi itu turret arghhh</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="chat-window">
+      <header class="chat-header">
+        <div class="chat-title">Riska</div>
+        <div class="chat-actions">
+          <button>📞</button>
+          <button>📹</button>
+        </div>
+      </header>
+
+      <div class="chat-body">
+        <div class="date-separator">Today</div>
+        
+        <div class="message received">Riska....</div>
+        <div class="message sent">Kenapa ???</div>
+        <div class="message received">Gimana Besok jadi ikut ga??</div>
+        <div class="message received">Yaudah klo jadi kabarin ya..</div>
+        <div class="message sent">Gatau nih masih bingung ....</div>
+        <div class="message sent">Oke besok aku kabarin ya.</div>
+      </div>
+
+      <footer class="chat-footer">
+        <input type="text" placeholder="Type a message here" />
+        <button>➤</button>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
